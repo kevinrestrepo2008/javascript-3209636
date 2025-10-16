@@ -1,19 +1,68 @@
 section{
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
 height: 100vh;
-background-color: red;
+background-repeat: no-repeat;
+background-size: cover;
+display: flex;
+justify-content: center;
+align-items: center;
+
+
 }
 
-button{
-background-color: blue;
-border: 2px solid;
-padding: 10px 50px ;
-border-radius: 10px;
-font-size: 16px;
-margin-top: 10px;
-color: white;
-font-weight: bold;
+
+.fondo {
+background-image: url(./img/images.jpg);
+height: 500px;
+width: 750px;
+background-repeat: no-repeat;
+background-size: cover;
+display: relative;
 }
+
+.zombie1{
+background-image: url(./img/zombie1.png);
+height: 180px;
+width: 120px;
+background-size:contain;
+background-repeat: no-repeat;
+position: absolute;
+right: 300px;
+}
+
+.zombie2{
+background-image: url(./img/zombie2.png);
+height: 130px;
+width: 120px;
+background-size:contain;
+background-repeat: no-repeat;
+position: absolute;
+right: 400px;
+top: 300px;
+}
+
+.zombie3{
+background-image: url(./img/zombie3.png);
+height: 115px;
+width: 120px;
+background-size:contain;
+background-repeat: no-repeat;
+position: absolute;
+right: 350px;
+top: 230px;
+}
+
+.nuez{
+background-image: url(./img/nuez.png);
+height: 90px;
+width: 105px;
+background-size:contain;
+background-repeat: no-repeat;
+position: absolute;
+right: 616px;
+top: 270px;
+
+
+}
+
+
+
