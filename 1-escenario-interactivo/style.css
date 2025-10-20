@@ -5,6 +5,8 @@ background-size: cover;
 display: flex;
 justify-content: center;
 align-items: center;
+position: relative;
+min-width: 750px;
 
 
 }
@@ -20,46 +22,68 @@ display: relative;
 }
 
 .zombie1{
-background-image: url(./img/zombie1.png);
-height: 180px;
-width: 120px;
+
+height: 110px;
+width: 100px;
 background-size:contain;
 background-repeat: no-repeat;
 position: absolute;
-right: 300px;
+right: 25%;
+top: 12%;
 }
 
 .zombie2{
-background-image: url(./img/zombie2.png);
+
 height: 130px;
 width: 120px;
 background-size:contain;
 background-repeat: no-repeat;
 position: absolute;
-right: 400px;
-top: 300px;
+right: 30%;
+top: 45%;
 }
 
 .zombie3{
-background-image: url(./img/zombie3.png);
+
 height: 115px;
 width: 120px;
 background-size:contain;
 background-repeat: no-repeat;
 position: absolute;
-right: 350px;
-top: 230px;
+right: 25%;
+top: 35%;
 }
 
 .nuez{
-background-image: url(./img/nuez.png);
-height: 90px;
-width: 105px;
+
+height: 80px;
+width: 80px;
 background-size:contain;
 background-repeat: no-repeat;
 position: absolute;
-right: 616px;
-top: 270px;
+right: 48%;
+top: 17%;
+
+}
+.guisante{
+height: 80px;
+width: 95px;
+background-size:contain;
+background-repeat: no-repeat;
+position: absolute;
+right: 57%;
+top: 41%;
+
+}
+
+.hielo1{
+height: 155px;
+width: 180px;
+background-size:contain;
+background-repeat: no-repeat;
+position: absolute;
+right: 53%;
+top: 43%;
 
 
 }
