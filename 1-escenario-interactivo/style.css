@@ -41,6 +41,7 @@ background-repeat: no-repeat;
 position: absolute;
 right: 30%;
 top: 45%;
+animation: alternate-reverse moverZombie3 12s linear infinite;
 }
 
 .zombie3{
@@ -52,6 +53,7 @@ background-repeat: no-repeat;
 position: absolute;
 right: 25%;
 top: 35%;
+animation: alternate-reverse moverZombie3 9s linear infinite;
 }
 
 .nuez{
@@ -76,15 +78,39 @@ top: 41%;
 
 }
 
-.hielo1{
-height: 155px;
-width: 180px;
+.girasol{
+height: 90px;
+width: 90px;
 background-size:contain;
 background-repeat: no-repeat;
 position: absolute;
-right: 53%;
-top: 43%;
+right: 57%;
+top: 51%;
+}
 
+/* aminacion */
+
+/* planta4 */ 
+
+.bloque{
+animation: alternate-reverse moverZombie3 3s infinite;
+
+}
+
+@keyframes moverZombie3{
+0%{right: 23%}
+100%{right:50%}
+
+}
+
+.bloque{
+animation: alternate-reverse moverZombie3 3s infinite;
+
+}
+
+@keyframes moverZombie3{
+0%{right: 23%}
+100%{right:50%}
 
 }
 
