@@ -30,6 +30,7 @@ background-repeat: no-repeat;
 position: absolute;
 right: 25%;
 top: 12%;
+
 }
 
 .zombie2{
@@ -114,5 +115,40 @@ animation: alternate-reverse moverZombie3 3s infinite;
 
 }
 
+.score2{
+height: 40px;
+width: 100px;
+background-color: tomato;
+border-radius: 20px;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+border: 4px solid white;
+color: white;
+
+}
+
+.saltar{
+animation: saltar 0.5s ease forwards;
+
+}
+
+@keyframes saltar{
+0%{transform: translateY(0); opacity: 1;}
+30%{transform: translateY(-60px);}
+100%{transform: translateY(0); opacity: 0;}
+
+}
+
+.bloque{
+
+animation: moverbloque 4s linear infinite alternate;
+}
+
+@keyframes moverbloque{
+0%{left: 55%;}
+100%{left: 89%;}
 
 
+}
