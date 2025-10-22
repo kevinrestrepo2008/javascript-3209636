@@ -152,3 +152,149 @@ animation: moverbloque 4s linear infinite alternate;
 
 
 }
+
+.section2{
+height: 100vh;
+background-repeat: no-repeat;
+background-size: cover;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+min-width: 750px;
+
+}
+.fondo2{
+    background-image: url(./img/fondopacman.jpg);
+height: 500px;
+width: 750px;
+background-repeat: no-repeat;
+background-size: cover;
+display: relative;
+
+}
+
+.pacman1{
+height: 30px;
+width: 30px;
+background-size:contain;
+background-repeat: no-repeat;
+position: absolute;
+right: 46%;
+top: 14.5%;
+
+
+}
+
+.pacman2{
+height: 30px;
+width: 30px;
+background-size:contain;
+background-repeat: no-repeat;
+position: absolute;
+right: 46%;
+top: 61%;
+
+}
+
+.fantasma1{
+height: 30px;
+width: 30px;
+background-size:contain;
+background-repeat: no-repeat;
+position: absolute;
+right: 49%;
+top: 68%;
+
+}
+.fantasma2{
+height: 30px;
+width: 30px;
+background-size:contain;
+background-repeat: no-repeat;
+position: absolute;
+right: 57%;
+top: 45.5%;
+
+}
+
+.fantasma3{
+    height: 30px;
+width: 30px;
+background-size:contain;
+background-repeat: no-repeat;
+position: absolute;
+right: 25%;
+top: 45.5%;
+}
+
+.fantasma4{
+    height: 30px;
+width: 30px;
+background-size:contain;
+background-repeat: no-repeat;
+position: absolute;
+right: 57%;
+top: 60%;
+}
+
+.score3{
+height: 40px;
+width: 100px;
+background-color: tomato;
+border-radius: 20px;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+border: 4px solid white;
+color: white;
+
+}
+
+.section3{
+height: 100vh;
+background-repeat: no-repeat;
+background-size: cover;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+min-width: 750px;
+}
+
+.juego3{
+
+background-image: url(./img/fondoangrid.webp);
+height: 500px;
+width: 750px;
+background-repeat: no-repeat;
+background-size: cover;
+display: relative;
+}
+
+.angry1{
+height: 60px;
+width:60px;
+background-size:contain;
+background-repeat: no-repeat;
+position: absolute;
+right: 25%;
+top: 58%;
+
+}
+
+.score4{
+    height: 40px;
+width: 100px;
+background-color: tomato;
+border-radius: 20px;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+border: 4px solid white;
+color: white;
+}
+
+
