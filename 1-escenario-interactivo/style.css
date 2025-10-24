@@ -111,7 +111,7 @@ animation: alternate-reverse moverZombie3 3s infinite;
 
 @keyframes moverZombie3{
 0%{right: 23%}
-100%{right:50%}
+100%{right:40%}
 
 }
 
@@ -182,7 +182,7 @@ background-repeat: no-repeat;
 position: absolute;
 right: 46%;
 top: 14.5%;
-
+animation: alternate-reverse moverZombie3 7s linear infinite;
 
 }
 
@@ -194,7 +194,7 @@ background-repeat: no-repeat;
 position: absolute;
 right: 46%;
 top: 61%;
-
+animation: alternate-reverse moverZombie3 4s linear infinite;
 }
 
 .fantasma1{
@@ -281,8 +281,50 @@ background-repeat: no-repeat;
 position: absolute;
 right: 25%;
 top: 58%;
+animation: alternate-reverse moverZombie3 5s linear infinite;
 
 }
+
+.angry2{
+height: 60px;
+width:60px;
+background-size:contain;
+background-repeat: no-repeat;
+position: absolute;
+right: 65%;
+top: 30%;
+animation: alternate-reverse moverZombie3 9s linear infinite;
+}
+
+.angry3{
+    height: 100px;
+width:90px;
+background-size:contain;
+background-repeat: no-repeat;
+position: absolute;
+right: 70%;
+top: 53%;
+}
+
+.cerdo1{
+    height: 90px;
+width: 90px;
+background-size:contain;
+background-repeat: no-repeat;
+position: absolute;
+right: 49%;
+top: 13%;
+}
+
+
+
+
+
+
+
+
+
+
 
 .score4{
     height: 40px;
