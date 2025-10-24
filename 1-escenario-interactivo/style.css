@@ -316,10 +316,25 @@ right: 49%;
 top: 13%;
 }
 
+.pajaro1{
+    height: 90px;
+width: 90px;
+background-size:contain;
+background-repeat: no-repeat;
+position: absolute;
+right: 69%;
+top: 20%;   
+}
 
-
-
-
+.pajaro2{
+    height: 90px;
+width: 90px;
+background-size:contain;
+background-repeat: no-repeat;
+position: absolute;
+right: 30%;
+top: 40%;   
+}
 
 
 
