@@ -42,6 +42,7 @@ background-repeat: no-repeat;
 position: absolute;
 right: 30%;
 top: 45%;
+z-index: 1;
 animation: alternate-reverse moverZombie3 12s linear infinite;
 }
 
@@ -54,6 +55,7 @@ background-repeat: no-repeat;
 position: absolute;
 right: 25%;
 top: 35%;
+z-index: 0;
 animation: alternate-reverse moverZombie3 9s linear infinite;
 }
 
@@ -88,6 +90,53 @@ position: absolute;
 right: 57%;
 top: 51%;
 }
+.recta1{
+    height: 60px;
+width:60px;
+background-size:contain;
+background-repeat: no-repeat;
+position: absolute;
+right: 48%;
+top: 90%;
+}
+.recta2{
+    height: 60px;
+width:60px;
+background-size:contain;
+background-repeat: no-repeat;
+position: absolute;
+right: 42%;
+top: 90%;
+}
+.recta3{
+    height: 60px;
+width:60px;
+background-size:contain;
+background-repeat: no-repeat;
+position: absolute;
+right: 54%;
+top: 90%;
+}
+
+.flechader{
+     height: 60px;
+width:60px;
+background-size:contain;
+background-repeat: no-repeat;
+position: absolute;
+right: 16.5%;
+top: 50%;   
+}
+.flechaizq{
+     height: 60px;
+width:60px;
+background-size:contain;
+background-repeat: no-repeat;
+position: absolute;
+right: 79%;
+top: 50%;   
+}
+
 
 /* aminacion */
 
@@ -238,6 +287,8 @@ right: 57%;
 top: 60%;
 }
 
+
+
 .score3{
 height: 40px;
 width: 100px;
@@ -252,6 +303,8 @@ color: white;
 
 }
 
+
+
 .section3{
 height: 100vh;
 background-repeat: no-repeat;
@@ -261,6 +314,7 @@ justify-content: center;
 align-items: center;
 position: relative;
 min-width: 750px;
+
 }
 
 .juego3{
@@ -353,5 +407,15 @@ align-items: center;
 border: 4px solid white;
 color: white;
 }
+
+.activa{
+display: block;
+
+}
+
+.esscena{
+    display: none;
+}
+
 
 
