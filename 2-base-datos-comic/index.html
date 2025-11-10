@@ -1,53 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PIKTARA - Comic Streaming</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-<header>
-<h1>PIKTARA</h1>
-<H2>sinopsis</H2>
-<li>Ninove</li>
-<li>sNaramsin</li>
-<li>Adad</li>
-<li>Rey</li>
-<li>More</li>
-<li>connected</li>
-<li>Search</li>
-</header>
+    <header>
+        <div class="logo">
+            <h1>PIKTARA</h1>
+        </div>
+        <nav>
+            <ul class="nav">
+                <li>Ninove</li>
+                <li>Naramsin</li>
+                <li>Adad</li>
+                <li>Rey</li>
+                <li>Más</li>
+                <li>Conectado</li>
+                <li>Buscar</li>
+            </ul>
+        </nav>
+    </header>
 
-<section>
-<h1>PIKTARA</h1>
- <li>Play</li>
-<li>Trailer</li>
-<h2>botones</h2>
-</section>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 id="hero-title">PIKTARA</h1>
+                <p id="hero-synopsis">Un comic que narra la antiguedad y la invencion de la escritura</p>
+                <div class="buttons">
+                    <button class="btn-play">Reproducir</button>
+                    <button class="btn-trailer">Trailer</button>
+                </div>
+            </div>
+        </section>
 
-<section>
-<div>img</div>
-<div>img</div>
-<div>img</div>
-<div>img</div>
-<div>img</div>
-<div>img</div>
-<div>img</div>
-<div>img</div>
-<div>img</div>
-<div>img</div>
-<div>img</div>
-<div>img</div>
+        <section class="row">
+            <h2>Tendencias</h2>
+            <div class="carousel" id="trending-carousel">
+                <!-- Contenido dinámico -->
+            </div>
+        </section>
 
+        <section class="row">
+            <h2>Personajes</h2>
+            <div class="carousel" id="characters-carousel">
+                <!-- Contenido dinámico -->
+            </div>
+        </section>
 
+        <section class="row">
+            <h2>Continuar Viendo</h2>
+            <div class="carousel" id="continue-carousel">
+                <!-- Contenido dinámico -->
+            </div>
+        </section>
+    </main>
 
-</section>
-
-
-
-
-    <script src="./app.js"></script>
     <script src="./bd.js"></script>
+    <script src="./app.js"></script>
 </body>
 </html>
