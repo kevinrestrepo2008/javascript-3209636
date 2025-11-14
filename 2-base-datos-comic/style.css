@@ -231,30 +231,28 @@ main {
     font-family: 'Times New Roman', serif;
 }
 
+.personaje {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+    text-align: center;
+}
+
+.fotopersonaje{
+width: 90%;
+max-width: 300px;
+display: block;
+margin: 0 auto;
+}
+
+
 .carousel {
     display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
+    justify-content: center;
     gap: 20px;
-    padding-bottom: 15px;
-}
-
-.carousel::-webkit-scrollbar {
-    height: 10px;
-}
-
-.carousel::-webkit-scrollbar-track {
-    background: #D2B48C;
-    border-radius: 5px;
-}
-
-.carousel::-webkit-scrollbar-thumb {
-    background: #8B4513;
-    border-radius: 5px;
-}
-
-.carousel::-webkit-scrollbar-thumb:hover {
-    background: #A0522D;
+    flex-wrap: nowrap;
 }
 
 .card {
