@@ -26,19 +26,21 @@ let comic = {
      "id": 1,
      "nombre": "La invencion de la escritura",
      "personajes": ["Ninove","Adad"],
-      "imagen": "./images/escena1.jpg",
-    },
+      "imagen": "./img/capitulo1.png"
+    }
+    ,
+
     {
        "id": 2,
      "nombre": "Las primeras Civilizaciones",
      "personajes": ["Ninove","Adad"],
-      "imagen": "./images/escena1.jpg",
-    },
-    {
+      "imagen": "./img/capitulo2.png",
+    }
+   /*  {
       "id": 3,
      "nombre": "Viaje a Mesopotamia",
      "personajes": ["Ninove","Adad"],
-      "imagen": "./images/escena1.jpg",
-    }
+      "imagen": "",
+    } */
   ]
 }
