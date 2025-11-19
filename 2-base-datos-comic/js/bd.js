@@ -24,7 +24,7 @@ let comic = {
   "escenas": [
     {
      "id": 1,
-     "nombre": "La invencion de la escritura",
+     "nombre": "invención de la escritura",
      "personajes": ["Ninove","Adad"],
       "imagen": "./img/capitulo1.png"
     }
@@ -32,7 +32,7 @@ let comic = {
 
     {
        "id": 2,
-     "nombre": "Las primeras Civilizaciones",
+     "nombre": "Primeras civilizaciones",
      "personajes": ["Ninove","Adad"],
       "imagen": "./img/capitulo2.png",
     }

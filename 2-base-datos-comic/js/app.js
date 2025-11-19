@@ -21,10 +21,10 @@ comic.escenas.forEach(escenas => {
   const miCard = document.createElement("div")
   miCard.classList.add("character")
   miCard.innerHTML = `
-          
-            <h1>${escenas.nombre}Capitulo 2</h1>
-                    <img ${escenas.imagen} class="character-img" src="./img/capitulo2.png" alt="">
-                      <img ${escenas.imagen} class="character-img" src="./img/capitulo1.png" alt="">
+
+            <h1>${escenas.nombre}</h1>
+                    <img src="${escenas.imagen}" class="character-img" alt="">
+
 
 
             `

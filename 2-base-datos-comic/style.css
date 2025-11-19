@@ -159,6 +159,8 @@ main {
     justify-content: center;
     min-width: 200px;
     text-align: center;
+    justify-content: space-between;
+    
 }
 
 .character-img {
