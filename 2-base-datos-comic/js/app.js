@@ -33,3 +33,25 @@ comic.escenas.forEach(escenas => {
   console.log(escenas.nombre)
 
 });
+
+
+const perso = document.querySelector(".character-img")
+
+comic.personajes.forEach(per => {
+  
+  const micard = document.createElement("div")
+  micard.classList.add("character")
+  micard.innerHTML = `
+<div class="character">
+                    <h1>${per.nombre}</h1>
+                    <img class="character-img" src="${per.imagen}" alt="">
+                </div>
+                
+
+
+  `
+  perso.appendChild(micard)
+});
+
+
+

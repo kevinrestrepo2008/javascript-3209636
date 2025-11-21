@@ -157,10 +157,10 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-width: 200px;
+    flex: 1 1 200px;
     text-align: center;
     justify-content: space-between;
-    
+
 }
 
 .character-img {
@@ -176,13 +176,18 @@ main {
     justify-content: center;
     gap: 20px;
     position: relative;
+    flex-wrap: wrap;
 }
 
 @media (max-width: 767px) {
     header {
-        padding: 10px 15px;
+        padding: 10px 15px 10px;
+        padding-top: 50px;
         flex-direction: column;
         gap: 15px;
+        height: auto;
+        background-size: 100px auto;
+        background-position: center top;
     }
 
     .nav-list {
@@ -228,5 +233,68 @@ main {
     .section h2 {
         font-size: 1.5rem;
         margin-bottom: 20px;
+    }
+
+    .character-list {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .character {
+        flex: 1 1 auto;
+    }
+
+    .character-img {
+        max-width: 150px;
+    }
+
+    .character p {
+        font-size: 0.9rem;
+        margin: 10px 0 0 0;
+        text-align: center;
+        word-wrap: break-word;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    header {
+        padding: 15px 20px;
+    }
+
+    .nav-list {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .nav-list li {
+        font-size: 0.9rem;
+        margin: 0 10px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    .hero-container h1 {
+        font-size: 3.5rem;
+    }
+
+    .section {
+        padding: 25px;
+    }
+
+    .section h2 {
+        font-size: 1.8rem;
+    }
+
+    .character-img {
+        max-width: 180px;
+    }
+
+    .character p {
+        font-size: 0.8rem;
+        margin: 10px 0 0 0;
+        text-align: center;
+        word-wrap: break-word;
     }
 }
