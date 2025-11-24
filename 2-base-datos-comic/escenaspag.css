@@ -1,0 +1,36 @@
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+video {
+    display: block;
+    margin: 0 auto 30px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.flex-container a img {
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.flex-container a img:hover {
+    transform: scale(1.05);
+}
