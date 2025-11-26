@@ -21,11 +21,11 @@ comic.escenas.forEach(escenas => {
   const miCard = document.createElement("div")
   miCard.classList.add("character")
   miCard.innerHTML = `
-
+  <a class="link"  href="escenaspag.html?id=${escenas.id}">
             <h1>${escenas.nombre}</h1>
                     <img src="${escenas.imagen}" class="character-img" alt="">
 
-
+</a>
 
             `
   listaCapitulos.appendChild(miCard)
@@ -35,18 +35,19 @@ comic.escenas.forEach(escenas => {
 });
 
 
-const perso = document.querySelector(".character-img")
+const perso = document.querySelector(".section1")
 
 comic.personajes.forEach(per => {
   
   const micard = document.createElement("div")
-  micard.classList.add("character")
+  micard.classList.add("character-img1")
   micard.innerHTML = `
+  <a class="character-list1 link" href="persopag.html?id=${per.id}">
 <div class="character">
                     <h1>${per.nombre}</h1>
-                    <img class="character-img" src="${per.imagen}" alt="">
+                    <img class="character-img1" src="${per.imagen}" alt="">
                 </div>
-                
+                </a>
 
 
   `

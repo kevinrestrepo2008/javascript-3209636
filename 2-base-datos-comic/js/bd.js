@@ -5,16 +5,19 @@ let comic = {
   "autores": ["kevin","Melany"],
   "personajes": [
     {
+      "id": 1,
       "nombre": "Ninove",
       "imagen": "./img/ninove.png",
     }
     ,
     {
+      "id": 2,
       "nombre": "Adad",
       "imagen": "./img/adad.png",
     }
     ,
     {
+      "id": 3,
       "nombre": "Naramsin",
       "imagen": "./img/naramsin.png",
     }
@@ -36,11 +39,12 @@ let comic = {
      "personajes": ["Ninove","Adad"],
       "imagen": "./img/capitulo2.png",
     }
-   /*  {
+    ,
+    {
       "id": 3,
      "nombre": "Viaje a Mesopotamia",
      "personajes": ["Ninove","Adad"],
-      "imagen": "",
-    } */
+      "imagen": "./img/capitulo3.png",
+    }
   ]
 }

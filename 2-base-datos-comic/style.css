@@ -132,6 +132,7 @@ main {
 }
 
 .section {
+    width: 100%;
     display: flex;
     flex-direction: column;
     padding: 30px;
@@ -141,6 +142,18 @@ main {
     margin-bottom: 20px;
    
 }
+
+.section1 {
+    display: flex;
+    background: linear-gradient(to bottom, #F5DEB3, #D2B48C);
+    border: 2px solid #8B4513;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+    flex-direction: column;
+   
+}
+
 
 .section h2 {
     font-size: 2rem;
@@ -163,6 +176,19 @@ main {
 
 }
 
+.character1 {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 200px;
+    text-align: center;
+    justify-content: space-between;
+
+}
+
+
+
 .character-img {
     width: 80%;
     max-width: 200px;
@@ -171,6 +197,13 @@ main {
     background-size: contain;
 }
 
+.character-img1 {
+    width: 80%;
+    max-width: 200px;
+    display: block;
+    margin: 0 auto;
+    background-size: contain;
+}
 .character-list {
     display: flex;
     justify-content: center;
@@ -178,6 +211,22 @@ main {
     position: relative;
     flex-wrap: wrap;
 }
+
+.character-list1 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+
+.link{
+text-decoration: none;
+color: black;
+
+}
+
 
 @media (max-width: 767px) {
     header {
