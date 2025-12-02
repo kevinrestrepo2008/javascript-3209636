@@ -1,3 +1,6 @@
+
+import { comic } from "./bd.js";
+
 const bannerpk = document.querySelector(".hero")
 const listaCapitulos = document.querySelector(".character-list")
 bannerpk.style.backgroundImage = `url(${comic.portada})`
