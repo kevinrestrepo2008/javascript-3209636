@@ -11,16 +11,12 @@ body {
 .perso-header {
    display: flex;
    align-items: center; 
-justify-content: space-around;
+justify-content: center;
 background-color: #966F30;
 
 
 }
 
-.perso-header li {
-   cursor: pointer;
-
-}
 
 .perso-header ul{
 list-style: none;
@@ -36,52 +32,114 @@ h1 {
     text-align: center;
     
 }
-
-.texto {
-    font-size: 1rem;
-    margin: 0 auto 40px;
-    max-width: 800px;
-    text-align: center;
-    color: #ffffff;
-    
-}
  
 header {
-    
     position: relative;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100px;
     background-color: #966F30;
-    border-bottom: 3px solid #966F30;
     background-image: url(./img/logopik.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: left center;
-    z-index: 1;
+
+  
 }
 
-
-
 .escena-img {
-    display: block;
+    display: flex;
     margin: 0 auto 30px;
     border: 2px solid #6349083f;
     border-radius: 15px;
     max-width: 400px;
 }
 
+.per-pac {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
 .footer {
     position: absolute;
-    left: 0;
     width: 100%;
     height: 60px;
     background-color: #966F30;
-    border-top: 3px solid #966F30;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #ffffff;
     font-size: 1rem;
+}
+
+
+@media (max-width: 767px) {
+    .perso-header {
+        padding: 10px 15px;
+        flex-direction: column;
+        gap: 15px;
+        height: auto;
+    }
+
+    .perso-header ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .perso-header li {
+        font-size: 0.9rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .texto {
+        font-size: 0.9rem;
+        padding: 0 15px;
+    }
+
+    .escena-img {
+        max-width: 90%;
+        margin: 20px auto;
+    }
+
+    .per-pac {
+        padding: 15px;
+        min-height: calc(100vh - 180px);
+    }
+
+    .footer {
+        position: relative;
+        margin-top: 20px;
+        font-size: 0.8rem;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1100px) {
+    .perso-header {
+        padding: 15px 20px;
+    }
+
+    .perso-header ul {
+        gap: 15px;
+    }
+
+    .perso-header li {
+        font-size: 0.9rem;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    .texto {
+        max-width: 700px;
+    }
+
+    .escena-img {
+        max-width: 350px;
+    }
 }

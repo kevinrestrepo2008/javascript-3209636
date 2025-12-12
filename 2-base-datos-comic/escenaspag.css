@@ -6,7 +6,6 @@ body {
     font-family: Arial, sans-serif;
     background: linear-gradient(to bottom, #D2B48C, #F5DEB3);
     color: #3E2723;
-   
     position: relative;
     min-height: 100vh;
 }
@@ -14,14 +13,9 @@ body {
 .perso-header {
    display: flex;
    align-items: center; 
-justify-content: space-around;
+justify-content: center;
 background-color: #DEBB54;
 
-
-}
-
-.perso-header li {
-   cursor: pointer;
 
 }
 
@@ -50,19 +44,13 @@ h1 {
 }
  
 header {
-    
     position: relative;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100px;
     background-color: #DEBB54;
-    border-bottom: 3px solid #DAA520;
     background-image: url(./img/logopik.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: left center;
-    z-index: 1;
 }
 
 video {
@@ -72,18 +60,90 @@ video {
     border-radius: 20px;
 }
 
-
+.per-pac {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
 
 .footer {
     position: absolute;
-    left: 0;
     width: 100%;
     height: 60px;
     background-color: #DEBB54;
-    border-top: 3px solid #DAA520;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #5D4037;
     font-size: 1rem;
+}
+
+/* celll */
+@media (max-width: 767px) {
+    .perso-header {
+        padding: 10px 15px;
+        flex-direction: column;
+        gap: 15px;
+        height: auto;
+    }
+
+    .perso-header ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .perso-header li {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .des-esc {
+        font-size: 0.9rem;
+        padding: 0 15px;
+    }
+
+    video {
+        max-width: 90%;
+        margin: 20px auto;
+    }
+
+    .footer {
+        position: relative;
+        margin-top: 20px;
+        font-size: 0.8rem;
+    }
+}
+
+
+
+/* tablettt */
+@media (min-width: 768px) and (max-width: 1100px) {
+    .perso-header {
+        padding: 15px 20px;
+    }
+
+    .perso-header ul {
+        gap: 15px;
+    }
+
+    .perso-header li {
+        font-size: 0.9rem;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    .des-esc {
+        max-width: 700px;
+    }
+
+    video {
+        max-width: 80%;
+    }
 }

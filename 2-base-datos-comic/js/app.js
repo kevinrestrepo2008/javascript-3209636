@@ -1,20 +1,12 @@
-
+ 
 import { comic } from "./bd.js";
 
-const bannerpk = document.querySelector(".hero")
-const listaCapitulos = document.querySelector(".character-list")
+const bannerpk = document.querySelector(".panel")
+const listaCapitulos = document.querySelector(".personajes")
 bannerpk.style.backgroundImage = `url(${comic.portada})`
 console.log(bannerpk)
 
-bannerpk.innerHTML = `
-<div class="hero-container">
-                <h1>${comic.nombreComic}</h1>
-                <div class="hero-buttons">
-                    <button class="play-btn">Reproducir</button>
-                    <button class="trailer-btn">Trailer</button>
-                    
-                </div>
-           `
+document.querySelector('.panel-conte h1').textContent = comic.nombreComic;
 
 /*  aqui vamos a mostrar las tarjetas de escenas  */
 
@@ -22,11 +14,11 @@ bannerpk.innerHTML = `
 
 comic.escenas.forEach(escenas => {
   const miCard = document.createElement("div")
-  miCard.classList.add("character")
+  miCard.classList.add("escena")
   miCard.innerHTML = `
   <a class="link"  href="escenaspag.html?id=${escenas.id}">
             <h1>${escenas.nombre}</h1>
-                    <img src="${escenas.imagen}" class="character-img" alt="">
+                    <img src="${escenas.imagen}" class="personajes-img" alt="">
 
 </a>
 
@@ -38,23 +30,23 @@ comic.escenas.forEach(escenas => {
 });
 
 
-const perso = document.querySelector(".section1")
+const section1 = document.querySelector(".section1")
+const listaPersonajes = document.createElement("div")
+listaPersonajes.classList.add("personajes1")
+section1.appendChild(listaPersonajes)
 
 comic.personajes.forEach(per => {
-  
+
   const micard = document.createElement("div")
-  micard.classList.add("character-img1")
+  micard.classList.add("personajes1")
   micard.innerHTML = `
-  <a class="character-list1 link" href="persopag.html?id=${per.id}">
-<div class="character">
-                    <h1>${per.nombre}</h1>
-                    <img class="character-img1" src="${per.imagen}" alt="">
-                </div>
-                </a>
+  <a class="link" href="persopag.html?id=${per.id}">
+            <h1>${per.nombre}</h1>
+                    <img src="${per.imagen}" class="personajes1-img" alt="">
+</a>
 
-
-  `
-  perso.appendChild(micard)
+            `
+  listaPersonajes.appendChild(micard)
 });
 
 

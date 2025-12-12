@@ -3,16 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PIKTARA </title>
+    <title>PIKTARA</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header>
-        <div class="logo">
-        
-        </div>
+        <div class="logo"></div>
         <nav>
-            <ul class="nav-list">
+            <ul class="nombre-header">
                 <li>Ninove</li>
                 <li>Naramsin</li>
                 <li>Adad</li>
@@ -22,34 +20,57 @@
                 <li>Buscar</li>
             </ul>
         </nav>
-     
     </header>
 
     <main>
-        <section class="hero">
-            
-        </section>
-        
-        <section class="section">
-            <h2>Capitulos</h2>
-            <div class="character-list">
-                
-               
+        <section class="panel">
+            <!-- Carrusel -->
+            <div class="carousel">
+                <div class="carousel-slide active">
+                    <img src="./img/carru1.jpeg" alt="Capítulo 1">
+                </div>
+                <div class="carousel-slide">
+                    <img src="./img/carru2.jpeg" alt="Escena 2">
+                </div>
+                <div class="carousel-slide">
+                    <img src="./img/carru3.png" alt="Fondo">
+                </div>
             </div>
+
+            <!-- Controles de navegación -->
+            <button class="carousel-nav prev" onclick="changeSlide(-1)">❮</button>
+            <button class="carousel-nav next" onclick="changeSlide(1)">❯</button>
+
+            <!-- Indicadores -->
+            <div class="carousel-indicators">
+                <span class="indicator active" onclick="goToSlide(0)"></span>
+                <span class="indicator" onclick="goToSlide(1)"></span>
+                <span class="indicator" onclick="goToSlide(2)"></span>
+            </div>
+
+            <!-- Contenido sobre el carrusel -->
+            <div class="panel-conte">
+                <h1>PIKTARA</h1>
+                <div class="panel-btn">
+                    <button class="repro-btn">Reproducir</button>
+                    <button class="trailer-btn">Trailer</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Capítulos</h2>
+            <div class="personajes"></div>
         </section>
 
         <section class="section1">
             <h2>Personajes</h2>
-            <div class="character-list1">
-              
-                
-            </div>
+            <div class="personajes1"></div>
         </section>
-
-       
     </main>
 
-   
+
+
     <script type="module" src="./js/app.js"></script>
 </body>
 </html>

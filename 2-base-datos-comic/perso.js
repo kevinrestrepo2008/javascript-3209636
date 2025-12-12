@@ -1,4 +1,4 @@
-import { comic } from "./js/bd.js";
+    import { comic } from "./js/bd.js";
 
 const param = new URLSearchParams(window.location.search);
 
