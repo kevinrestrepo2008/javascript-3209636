@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+   background-color: #d4af37;
+    color: #333;
+    opacity: 0;
+    animation: animacion 3s ease-in-out forwards;
+
+}
+
+.div-boton {
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: white;
+   
+  
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #8b4513;
+ 
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #daa520;
+    color: #333;
+    border: 2px solid #8b4513;
+    border-radius: 10px;
+    cursor: pointer;    
+}
+
+@keyframes animacion {
+    to {
+        opacity: 1;
+    }
+}
+
+
+

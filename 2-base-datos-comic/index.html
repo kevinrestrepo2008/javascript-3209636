@@ -6,19 +6,19 @@
     <title>PIKTARA</title>
     <link rel="stylesheet" href="./style.css">
 </head>
-<body>
+<body class="fade-in">
     <header>
         <div class="logo"></div>
         <nav>
-            <ul class="nombre-header">
-                <li>Ninove</li>
-                <li>Naramsin</li>
-                <li>Adad</li>
-                <li>Rey</li>
-                <li>Más</li>
-                <li>Conectado</li>
-                <li>Buscar</li>
-            </ul>
+            <nav class="nombre-header">
+               <a href="#personajes1">Ninove</a> 
+               <a href="#personajes1">Naramsin</a> 
+               <a href="#personajes1">Adad</a> 
+               <a href="#">Re</a> 
+               <a href="#">Mas</a> 
+               <a href="#">Conectado</a> 
+               <a href="#">Buscar</a> 
+            </nav>
         </nav>
     </header>
 
@@ -37,9 +37,6 @@
                 </div>
             </div>
 
-            <!-- Controles de navegación -->
-            <button class="carousel-nav prev" onclick="changeSlide(-1)">❮</button>
-            <button class="carousel-nav next" onclick="changeSlide(1)">❯</button>
 
             <!-- Indicadores -->
             <div class="carousel-indicators">
@@ -58,7 +55,7 @@
             </div>
         </section>
 
-        <section class="section">
+        <section class="section" id="personajes1">
             <h2>Capítulos</h2>
             <div class="personajes"></div>
         </section>
@@ -68,8 +65,6 @@
             <div class="personajes1"></div>
         </section>
     </main>
-
-
 
     <script type="module" src="./js/app.js"></script>
 </body>
