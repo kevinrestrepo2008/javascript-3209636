@@ -1,0 +1,49 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    animation: entradaNegra 2s ease-in-out forwards;
+}
+
+/* Animaciones */
+@keyframes entradaNegra {
+    to {
+        background-color: #CD853F;
+    }
+}
+
+
+.img-logo {
+    cursor: pointer;
+    max-width: 300px;
+    width: 100%;
+    opacity: 0;
+    animation: aparecerImagen 2s ease-in-out 1s forwards;
+}
+
+@keyframes aparecerImagen {
+    to {
+        opacity: 1;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .imagen-tren {
+        max-width: 250px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .imagen-tren {
+        max-width: 200px;
+    }
+}
+
+
+
+
